@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block content %}
+<div class=" mt-5" >
+<div class="text-center">
+<img src="{% static 'core/images/AAA.jpg' %}" alt="Profilepic" class="img-thumbnail" width="250px" height="150pxsss">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello</h1>
+<div class="px-4" style="line-height:2rem;">
+<p style="text-indent:100px;">I am <b class="text-warning">ALOK KUMAR SAHOO</b>
+having 1 year of full-stack web development experience, I offer the technical expertise you 
+are seeking for your web developer position.</p>
+<p>Since earning my bechelor's degree in internet and web development from OXFORD COLLAGE OF SCIENCE, I have served 
+as a web developer at <b class="text-warning">AKS Technology</b>, One  of biggest premier digital marketing and
+web development firm. In this position , I have led web development projects for clients in diverse industries 
+including Technology, manufacturing, pharmaceutical, hospitality, retail and financial services.</p>
+
+
+</div>
+</div>
+<div class="text-center">
+<a href="{% url 'contact' %}" class="btn btn-outline-warning  my-3 mr-5">Hier me</a>
+<a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+</div>
+</div>
+{% endblock content %}
